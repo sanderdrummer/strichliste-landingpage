@@ -1,0 +1,19 @@
+sudo: false
+language: go
+go:
+  - 1.11
+install:
+  - go get -v github.com/spf13/hugo
+script:
+  - export PATH=$HOME/gopath/bin:$PATH
+  - hugo --theme=hckspc-bootstrap
+deploy:
+  local-dir: public/
+  fqdn: www.strichliste.org
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
+
