@@ -1,11 +1,8 @@
-+++
-date = "2015-07-11T20:23:21+02:00"
-draft = false
-title = "What is this project about?"
-[menu]
-  [menu.main]
-    parent = "About"
-+++
+---
+date: '2015-07-11T20:23:21+02:00'
+draft: false
+title: 'What is this project about?'
+---
 
 <quote>
 _strichliste_ ([ʃtʀɪçˈlɪstə], German word for tally sheet) is a tool to replace a tally sheet inside a hackerspace. 
