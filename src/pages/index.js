@@ -4,6 +4,8 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { Card, ResponsiveGrid } from 'bricks-of-sand'
 import HeroImage from '../components/hero-image'
+import Features from '../components/features'
+import Users from '../components/users'
 
 class BlogIndex extends React.Component {
   render() {
@@ -17,7 +19,11 @@ class BlogIndex extends React.Component {
           title={siteTitle}
         />
         <HeroImage />
-        <ResponsiveGrid gridGap="1rem" columns="1fr 1fr 1fr">
+        <ResponsiveGrid
+          margin="1rem"
+          gridGap="1rem"
+          tabletColumns="1fr 1fr 1fr"
+        >
           <Card>
             <h2>Fully responsive</h2>
             <p>
@@ -40,6 +46,8 @@ class BlogIndex extends React.Component {
             </p>
           </Card>
         </ResponsiveGrid>
+        <Features />
+        <Users />
       </Layout>
     )
   }

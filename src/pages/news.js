@@ -1,8 +1,11 @@
+/** @jsx jsx */
+
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
+import { Card, jsx } from 'bricks-of-sand'
 import Layout from '../components/layout'
 
 class BlogIndex extends React.Component {
@@ -21,18 +24,30 @@ class BlogIndex extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-        <h2>News</h2>
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div className="card" key={node.fields.slug}>
-              <h3>
-                <Link to={node.fields.slug}>{title}</Link>
-              </h3>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}
+        <div
+          css={{
+            padding: '1rem 0',
+            margin: '0 auto',
+            maxWidth: '700px',
+            h3: {
+              marginBottom: '1rem',
+            },
+          }}
+        >
+          <h2>News</h2>
+
+          {posts.map(({ node }) => {
+            const title = get(node, 'frontmatter.title') || node.fields.slug
+            return (
+              <Link to={node.fields.slug}>
+                <Card hover="level3" margin="2rem 0" key={node.fields.slug}>
+                  <h3>{title}</h3>
+                  <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                </Card>
+              </Link>
+            )
+          })}
+        </div>
       </Layout>
     )
   }

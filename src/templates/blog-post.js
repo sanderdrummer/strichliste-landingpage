@@ -21,10 +21,47 @@ class BlogPostTemplate extends React.Component {
         />
         <div
           css={{
-            maxWidth: '800px',
-            margin: '1rem auto',
+            maxWidth: '1024px',
+            margin: '0 auto',
+            padding: '1rem 0',
+            quote: {
+              borderLeft: '0.25rem solid #eceeef',
+              padding: '0.5rem 1rem',
+              display: 'block',
+            },
+            pre: {
+              wordBreak: 'break-word',
+              wordWrap: 'break-word',
+              display: 'block',
+              padding: '0.5rem',
+              background: 'lightgrey',
+              border: 'solid 1px #000',
+              borderRadius: '4px',
+              margin: '1rem 0',
+              fontSize: '0.8rem',
+              textOverflow: 'ellipsis',
+              overflow: 'hidden',
+            },
+            'ul, ol': {
+              marginLeft: '2rem',
+              marginBottom: '1rem',
+              textOverflow: 'ellipsis',
+              overflow: 'hidden',
+            },
+            ul: {
+              listStyle: 'square',
+            },
             'p, h1, h2, h3, quote': {
               marginBottom: '1rem',
+            },
+            h1: {
+              fontSize: '1.7rem',
+            },
+            h2: {
+              fontSize: '1.5rem',
+            },
+            h3: {
+              fontSize: '1.3rem',
             },
             '@media only screen and (min-width: 30em)': {
               padding: '1rem',

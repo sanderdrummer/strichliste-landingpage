@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Hackerspace Bremen e.V.",
+    "link": "https://www.hackerspace-bremen.de/",
+    "img": "/img/users/hackerspace-bremen.png"
+  },
+  {
+    "name": "ownCloud",
+    "link": "https://www.owncloud.org/",
+    "img": "/img/users/ownCloud.png"
+  },
+  {
+    "name": "Hackzogtum Coburg",
+    "link": "https://www.hackzogtum-coburg.de/",
+    "img": "/img/users/hackzogtum.png"
+  },
+  {
+    "name": "backspace e.V.",
+    "img": "/img/users/backspace.png",
+    "link": "https://www.hackerspace-bamberg.de"
+  },
+  {
+    "name": "Thomann",
+    "img": "/img/users/thomann.jpg",
+    "link": "https://thomann.de"
+  },
+  {
+    "name": "Nerd2Nerd",
+    "link": "https://www.nerd2nerd.org/",
+    "img": "/img/users/nerd2nerd.png"
+  },
+  {
+    "name": "Schaffenburg",
+    "link": "https://schaffenburg.de/",
+    "img": "/img/users/schaffenburg.png"
+  }
+]
